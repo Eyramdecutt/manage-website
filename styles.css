@@ -1,0 +1,81 @@
+:root {
+  --color-primary-red: hsl(12, 88%, 59%);
+  --color-primay-blue: hsl(228, 39%, 23%);
+  --color-secondary: #fff;
+  --color-body: hsl(227, 12%, 61%);
+}
+
+/* Typography */
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1.8rem;
+  color: var(--color-body);
+  margin: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primay-blue);
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 4.7rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  h2 {
+    font-size: 4.7rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Button */
+.btn {
+  text-decoration: none;
+  background-color: var(--color-primary-red);
+  border-radius: 30px;
+  padding: 1.8rem 4.5rem;
+  color: #f0f0f0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn--white {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-red);
+}
+
+.btn--small {
+  padding: 1.4rem 3.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
