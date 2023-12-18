@@ -386,3 +386,185 @@ h3 {
     width: 460px;
   }
 }
+
+/* Slider Buttons */
+.slider-btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-btn {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-primary);
+  margin-left: 10px;
+}
+
+.circle-btn:nth-child(2) {
+  background: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .slider-btn {
+    display: none;
+  }
+}
+
+/* Input */
+.input-group {
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+
+.input,
+.btn-height {
+  height: 65px;
+}
+
+.input {
+  border-radius: 30px;
+  border: 1px solid var(--color-body);
+  color: var(--color-body);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1rem 3rem;
+  width: 70%;
+}
+
+.input {
+  font-size: 1.6rem;
+  width: 70%;
+}
+
+.input::placeholder {
+  color: var(--color-body);
+}
+
+.input-group .btn {
+  margin-left: 1rem;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 2rem 3.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.icons {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-logo {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-logo > img {
+  width: 220px;
+}
+
+.footer-copyright-two {
+  display: block;
+  padding-top: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  background: hsl(233, 12%, 13%);
+}
+
+.footer-copyright-one {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .input-group {
+    display: flex;
+    padding-bottom: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .links li a {
+    font-size: 1.8rem;
+  }
+
+  .footer-copyright-one {
+    display: flex;
+    padding-left: 8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-copyright-two {
+    display: none;
+  }
+
+  .footer .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .first-column {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .third-column {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .input {
+    width: 55%;
+  }
+
+  .icons {
+    order: 2;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 50px;
+    height: 30px;
+    padding-left: 2rem;
+  }
+
+  .links {
+    justify-content: space-between;
+  }
+
+  .input-group .btn {
+    padding: 1.5rem 3.5rem;
+  }
+
+  .links {
+    padding-top: 1rem;
+    padding-right: 11rem;
+  }
+}

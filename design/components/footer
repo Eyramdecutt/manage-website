@@ -1,0 +1,39 @@
+<div class="footer">
+  <div class="container grid grid--1x3">
+    <div class="first-column">
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Updates in your inbox..."
+        />
+        <a href="#" class="btn btn-height">GO</a>
+      </div>
+      <p class="footer-copyright-one">Copyright 2020. All right Reserved</p>
+    </div>
+    <div class="links">
+      <ul class="list one">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <ul class="list two">
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="third-column">
+      <div class="icons">
+        <img class="icon" src="images/icon-facebook.svg" alt="" />
+        <img class="icon" src="images/icon-youtube.svg" alt="" />
+        <img class="icon" src="images/icon-twitter.svg" alt="" />
+        <img class="icon" src="images/icon-pinterest.svg" alt="" />
+        <img class="icon" src="images/icon-instagram.svg" alt="" />
+      </div>
+      <div class="footer-logo"><img src="images/logo.svg" alt="" /></div>
+      <p class="footer-copyright-two">Copyright 2020. All right Reserved</p>
+    </div>
+  </div>
+</div>
