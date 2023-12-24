@@ -19,9 +19,10 @@ html {
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--color-body);
   line-height: 2;
+  overflow-x: hidden;
 }
 
 h1,
@@ -32,32 +33,79 @@ h3 {
 }
 
 h1 {
-  font-size: 4.1rem;
+  font-size: 5.1rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4.6rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 4.6rem;
   }
 
   h3 {
     font-size: 2rem;
+  }
+}
+
+/* Background */
+.background1,
+.background2,
+.background3,
+.background4 {
+  position: absolute;
+}
+
+.background1 {
+  transform: translate(70px, -90px);
+  width: 500px;
+  z-index: -1;
+}
+
+.background2 {
+  transform: translate(310px, 610px);
+  width: 400px;
+  z-index: -1;
+}
+
+.background3 {
+  width: 100px;
+  transform: translate(0px, 2950px);
+}
+
+@media screen and (min-width: 768px) {
+  .background1,
+  .background2 {
+    width: 700px;
+  }
+  .background1 {
+    transform: translate(850px, -100px);
+  }
+
+  .background2 {
+    transform: translate(-400px, 1280px);
+  }
+
+  .background3 {
+    display: none;
+  }
+
+  .background4 {
+    transform: translate(210px, 2295px);
   }
 }
 
@@ -75,6 +123,7 @@ h3 {
 .btn--white {
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  padding: 0.8rem 3.5rem;
 }
 
 .btn--small {
@@ -121,7 +170,7 @@ h3 {
 
 /* Callout */
 .callout {
-  padding: 7rem;
+  padding: 9rem;
 }
 
 .callout--primary {
@@ -143,10 +192,14 @@ h3 {
 @media screen and (min-width: 768px) {
   .callout {
     padding: 1.5rem;
+    margin-top: 15rem;
+  }
+
+  .callout .grid--1x2 {
+    margin: auto 8rem;
   }
 
   .container {
-    /* max-width: 1440px; TODO: come back to it */
     margin: 0 8rem;
   }
 
@@ -161,6 +214,10 @@ h3 {
 }
 
 /* Hero */
+.hero {
+  margin-top: 4rem;
+}
+
 .hero__image {
   width: 100%;
 }
@@ -180,6 +237,13 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 12rem;
+  }
+  .hero__heading {
+    max-width: 700px;
+  }
+
   .hero .grid--1x2 {
     column-gap: 4rem;
     align-items: center;
@@ -263,14 +327,11 @@ h3 {
 }
 
 .block__heading {
-  width: 70%;
-  margin: 2rem auto;
-  /* text-align: center; */
+  margin: 2rem 1rem;
 }
 
 .block__body {
   text-align: center;
-  margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
@@ -283,10 +344,6 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .block__body {
-    text-align: left;
-  }
-
   .block-one {
     display: none;
   }
@@ -297,7 +354,6 @@ h3 {
 
   .block .block__heading {
     margin-top: 0;
-    /* text-align: left; */
   }
 
   .block__header {
@@ -308,14 +364,15 @@ h3 {
   }
 
   .block__body {
-    margin-left: 8rem;
+    padding-left: 0;
+    text-align: left;
   }
 }
 
 /* Card */
 .card {
   background: hsl(0, 0%, 98%);
-  background: blue;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,6 +396,13 @@ h3 {
 .testimonial {
   margin: 4rem;
   text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.testimonial-btn {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
 }
 
 .testimonial__image {
@@ -346,6 +410,11 @@ h3 {
   top: -40px;
   position: absolute;
   justify-self: center;
+}
+
+.testimonial-heading {
+  text-align: center;
+  margin-bottom: 7rem;
 }
 
 .next {
@@ -359,6 +428,10 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial-btn {
+    margin-bottom: 7rem;
+  }
+
   .card {
     width: 600px;
     height: 300px;
@@ -366,7 +439,6 @@ h3 {
 
   .testimonials {
     justify-content: space-between;
-    position: absolute;
     left: -200px;
   }
 
@@ -383,17 +455,18 @@ h3 {
     justify-self: center;
     align-items: center;
     justify-content: center;
-    width: 460px;
+    width: 340px;
   }
 }
 
 /* Slider Buttons */
 .slider-btn {
   width: 100%;
-  height: 40px;
+  height: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 7rem;
 }
 
 .circle-btn {
@@ -467,7 +540,7 @@ h3 {
   font-size: 2rem;
 }
 
-.icons {
+.input-group .icons {
   width: 100%;
   height: 60px;
   display: flex;
@@ -494,6 +567,7 @@ h3 {
   padding-top: 3rem;
   text-align: center;
   padding-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 .footer {
@@ -504,11 +578,30 @@ h3 {
   display: none;
 }
 
+.icons {
+  text-align: center;
+  margin-top: 2.2rem;
+}
+
+.icon {
+  margin-right: 4rem;
+}
+
 @media screen and (min-width: 768px) {
+  .footer-logo {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .icons {
+    justify-content: left;
+  }
+
   .input-group {
     display: flex;
     padding-bottom: 2rem;
     padding-top: 3.5rem;
+    padding-left: 10rem;
   }
 
   .links li a {
@@ -517,8 +610,9 @@ h3 {
 
   .footer-copyright-one {
     display: flex;
-    padding-left: 8rem;
+    padding-left: 13rem;
     margin-bottom: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .footer-copyright-two {
@@ -527,6 +621,11 @@ h3 {
 
   .footer .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    padding-bottom: 1.5rem;
+    padding: 0 8rem;
   }
 
   .first-column {
@@ -538,10 +637,7 @@ h3 {
     display: grid;
     grid-column: 1;
     grid-row: 1;
-  }
-
-  .input {
-    width: 55%;
+    justify-content: flex-start;
   }
 
   .icons {
@@ -553,19 +649,16 @@ h3 {
     width: 50px;
     height: 30px;
     padding-left: 2rem;
+    margin-right: 0;
   }
 
   .links {
+    padding-top: 1rem;
     justify-content: space-between;
   }
 
   .input-group .btn {
     padding: 1.5rem 3.5rem;
-  }
-
-  .links {
-    padding-top: 1rem;
-    padding-right: 11rem;
   }
 }
 
@@ -574,7 +667,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem;
+  padding-top: 5rem;
 }
 
 .navbar__menu {
@@ -589,7 +682,17 @@ h3 {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+.navbar .btn:hover,
+.hero .btn:hover,
+.testimonial-btn .btn:hover {
+  background: hsl(12, 88%, 59%, 0.5);
+}
+
+@media screen and (min-width: 1228px) {
+  .navbar {
+    padding-top: 6rem;
+  }
+
   .navbar__links {
     display: inline-flex;
   }
@@ -604,7 +707,7 @@ h3 {
 
   .navbar__links .link {
     list-style: none;
-    margin-right: 3rem;
+    margin-right: 4rem;
   }
 
   .navbar__links a {
@@ -618,5 +721,6 @@ h3 {
 
   .navbar .btn {
     padding: 1rem 3rem;
+    margin-right: 1.8rem;
   }
 }
